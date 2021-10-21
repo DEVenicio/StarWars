@@ -10,5 +10,24 @@
         android:id="@+id/mainFragment"
         android:name="com.venicio.starwars.view.ui.MainFragment"
         android:label="Star Wars "
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_peopleDetailFragment"
+            app:destination="@id/peopleDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/peopleDetailFragment"
+        android:name="com.venicio.starwars.view.ui.PeopleDetailFragment"
+        android:label="Detalhes do Personagem"
+        tools:layout="@layout/fragment_people_detail">
+        <argument
+            android:name="idPeople"
+            app:argType="integer" />
+        <argument
+            android:name="idPlanet"
+            app:argType="integer" />
+        <argument
+            android:name="idSpecie"
+            app:argType="integer" />
+    </fragment>
 </navigation>

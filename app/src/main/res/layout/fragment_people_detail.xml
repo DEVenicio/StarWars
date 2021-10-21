@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.ui.PeopleDetailFragment"
+    android:background="#161717">
+
+    <ProgressBar
+        android:id="@+id/ProgressBarDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvContainerDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@color/black"
+        android:elevation="8dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp">
+
+            <TextView
+                android:id="@+id/tvNamePeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Nome:"
+                android:textColor="#7DB37F"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvInputNamePeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tvNamePeople"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/tvNamePeople"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvInputNamePeople"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Altura:"
+                android:textColor="#7DB37F"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvInputHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tvHeight"
+                android:layout_toEndOf="@id/tvHeight"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvHeight"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Peso:"
+                android:textColor="#7DB37F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvInputMass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tvMass"
+                android:layout_alignTop="@id/tvMass"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvHairColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvMass"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Cor do cabelo:"
+                android:textColor="#7DB37F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvInputHairColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tvHairColor"
+                android:layout_alignTop="@id/tvHairColor"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSkinColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvHairColor"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Cor da pele:"
+                android:textColor="#7DB37F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvInputSkinColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tvSkinColor"
+                android:layout_alignTop="@id/tvSkinColor"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEyeColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSkinColor"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Cor do olho:"
+                android:textColor="#7DB37F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvInputEyeColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tvEyeColor"
+                android:layout_alignTop="@id/tvEyeColor"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvBirthYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvEyeColor"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Data de nascimento:"
+                android:textColor="#7DB37F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvInputBirthYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tvBirthYear"
+                android:layout_alignTop="@id/tvBirthYear"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvBirthYear"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Gênero:"
+                android:textColor="#7DB37F"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvInputGenero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tvGender"
+                android:layout_alignTop="@id/tvGender"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPlanet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvGender"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Planeta Natal:"
+                android:textColor="#7DB37F"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvInputPlanet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tvPlanet"
+                android:layout_alignTop="@id/tvPlanet"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSpecie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPlanet"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Espécie:"
+                android:textColor="#7DB37F"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="14dp"/>
+
+            <TextView
+                android:id="@+id/tvInputSpecie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tvSpecie"
+                android:layout_alignTop="@id/tvSpecie"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/star_wars" />
+
+            <ImageView
+                android:id="@+id/icFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star_outline"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
