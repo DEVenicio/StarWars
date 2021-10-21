@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.venicio.starwars.MainFragment"
+        android:name="com.venicio.starwars.view.ui.MainFragment"
         android:label="Star Wars "
         tools:layout="@layout/fragment_main" />
 </navigation>
