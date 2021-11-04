@@ -24,7 +24,7 @@
 
 
 
-## Foram feitos no desafio 
+## Foram feitos 
 -> Lista dos personagens com os dados solicitados ✔️ <br>
 -> Detalhes do personagem com os dados solicitados (incluindo Planeta e Espécie) ✔️ <br>
 -> Toda a parte de Banco de dados está comentanda no código pois não houve tempo para finalizar a implementação 🚧
